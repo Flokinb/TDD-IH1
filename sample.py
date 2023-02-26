@@ -1,18 +1,12 @@
 taxes = {
     'South Korea': 0.1,
-    'Australia': 0.1,
     'China': 0.13,
-    'United Kingdom': 0.2,
-    'Germany': 0.19,
     'France': 0.2
 }
 
 shipping = {
     'South Korea': 5.9,
-    'Australia': 5.7,
     'China': 5.1,
-    'United Kingdom': 4.2,
-    'Germany': 4.3,
     'France': 4.9
 }
 

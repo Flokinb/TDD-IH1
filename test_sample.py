@@ -21,3 +21,9 @@ def test_calculate_shipping_fees():
              {"Name": "item2", "Price": 9, "Weight": 0.2, "Quantity": 6}]
     location = "France"
     assert calculate_shipping_fees(items, location) == 8.82
+
+def test_calculate_total_price():
+    items = [{"Name": "item1", "Price": 29, "Weight": 2.9, "Quantity": 3},
+             {"Name": "item2", "Price": 102, "Weight": 0.9, "Quantity": 1}]
+    location = "China"
+    assert calculate_total_price(items, location) == 262.53
