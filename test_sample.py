@@ -9,3 +9,9 @@ def test_multiple_items_without_taxes_and_shipping():
              {"Name": "item2", "Price": 3, "Weight": 0.1, "Quantity": 1}]
     assert calculate_base_price(items) == 7
 
+def test_calculate_taxes():
+    items = [{"Name": "item1", "Price": 1, "Weight": 0.3, "Quantity": 2},
+             {"Name": "item2", "Price": 8, "Weight": 3, "Quantity": 4},
+             {"Name": "item3", "Price": 3, "Weight": 2.1, "Quantity": 7}]
+    location = "South Korea"
+    assert calculate_taxes(items, location) == 5.5
