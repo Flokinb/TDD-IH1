@@ -15,3 +15,9 @@ def test_calculate_taxes():
              {"Name": "item3", "Price": 3, "Weight": 2.1, "Quantity": 7}]
     location = "South Korea"
     assert calculate_taxes(items, location) == 5.5
+
+def test_calculate_shipping_fees():
+    items = [{"Name": "item1", "Price": 3, "Weight": 0.3, "Quantity": 2},
+             {"Name": "item2", "Price": 9, "Weight": 0.2, "Quantity": 6}]
+    location = "France"
+    assert calculate_shipping_fees(items, location) == 8.82
